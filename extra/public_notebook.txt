@@ -1,1 +1,23 @@
-<script>src=path</script>
+#To import a JavaScript program.
+<script src=path defer</script>
+
+#To declare a variable on JavaScript.
+var name = value;
+let name = value;
+const name = value;
+
+var
+        - varfunction‑scopehoisting with initialization to undefined
+        - reassignable
+        - to be avoided
+
+lit
+        - letblock‑scope
+        - reassignable
+        - modern
+        - sure
+
+const
+        - constblock‑scopenon
+        - reassignable
+        - constant binding, not constant value
