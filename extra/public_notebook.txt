@@ -21,3 +21,12 @@ const
         - constblock‑scopenon
         - reassignable
         - constant binding, not constant value
+
+#if/else if/else
+	if (condition) {
+		logic
+	} else if (condition) {
+		logic
+	} else {
+		logic
+	}
