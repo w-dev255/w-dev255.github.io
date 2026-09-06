@@ -11,7 +11,7 @@ var
         - reassignable
         - to be avoided
 
-lit
+let
         - letblock‑scope
         - reassignable
         - modern
