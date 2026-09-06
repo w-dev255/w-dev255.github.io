@@ -1,4 +1,4 @@
-let buffer = 1;
+let buffer = 2;
 
 if (buffer < 2) {
 	buffer++;
