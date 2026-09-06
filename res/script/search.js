@@ -1,5 +1,5 @@
 const path = {
-	"0": ""
+	"0": "pages/C.html"
 };
 
 let input = document.getElementById("search");
