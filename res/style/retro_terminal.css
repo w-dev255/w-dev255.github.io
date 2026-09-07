@@ -22,5 +22,17 @@ body {
 	line-height: 1.4;
 }
 
+.section div {
+	border: 6px solid green;
+	padding: 6px;
+	margin-bottom: 24px;
+}
+
+.section a {
+	color: green;
+	border: 6px solid green;
+	padding: 6px;
+	line-height: 1.4;
+}
 
 
