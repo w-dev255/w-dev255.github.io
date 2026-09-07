@@ -24,13 +24,13 @@ body {
 
 .section div {
 	border: 6px solid green;
-	padding: 6px;
-	margin-bottom: 24px;
+	padding: 3px;
+	margin-bottom: 18px;
 }
 
 .section a {
 	color: green;
-	border: 6px solid green;
+	border: 3px solid green;
 	padding: 6px;
 	line-height: 1.4;
 }
