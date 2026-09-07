@@ -84,6 +84,16 @@ body {
 	padding: 6px;
 }
 
+.C div {
+	border: 0px solid black;
+}
+
+.C p {
+	font-family: monospace;
+	color: green;
+	line-height: 1.4;
+}
+
 .icon {
 	width: 50px;
 }
