@@ -63,6 +63,7 @@ body {
 }
 
 .search_bar {
+	font-family: monospace;
 	background-color: black;
 	color: green;
 	border: 3px solid green;
