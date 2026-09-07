@@ -16,7 +16,7 @@ input.addEventListener("input", () => {
 	if (buffer === "Tools") {
 		window.location.href = path["1"];
 	}
-	if (buffer == "Music") {
+	if (buffer === "Music") {
 		window.location.href = path["2"];
 	}
 	if (buffer === "Goals") {
