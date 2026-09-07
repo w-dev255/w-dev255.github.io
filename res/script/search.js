@@ -1,5 +1,5 @@
 const path = {
-	"0": "pages/C.html",
+	"0": "pages/c.html",
 	"1": "pages/tools.html",
 	"2": "pages/music.html"
 };
