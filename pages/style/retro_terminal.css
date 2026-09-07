@@ -71,6 +71,7 @@ body {
 }
 
 .search_bar::placeholder {
+	font-family: monospace;
 	color: green;
 	opacity: 1;
 }
