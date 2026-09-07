@@ -22,5 +22,62 @@ body {
 	line-height: 1.4;
 }
 
+.section div {
+	border: 6px solid green;
+	padding: 3px;
+	margin-bottom: 18px;
+}
 
+.section a {
+	font-family: monospace;
+	color: green;
+	line-height: 1.4;
+	margin-bottom: 18px;
+}
 
+.section table {
+	border: 3px solid green;
+	padding: 6px;
+	margin-bottom: 18px;
+}
+
+.section caption {
+	font-family: monospace;
+	color: green;
+	border: 3px solid green;
+	padding: 6px;
+}
+
+.section th {
+	font-family: monospace;
+	color: green;
+	border: 3px solid green;
+	padding: 6px;
+}
+
+.section td {
+	font-family: monospace;
+	color: green;
+	border: 3px solid green;
+	padding: 6px;
+}
+
+.search_bar {
+	font-family: monospace;
+	background-color: black;
+	color: green;
+	border: 3px solid green;
+	padding: 6px;
+}
+
+.section button {
+	font-family: monospace;
+	background-color: black;
+	color: green;
+	border: 3px solid green;
+	padding: 6px;
+}
+
+.icon {
+	width: 50px;
+}
