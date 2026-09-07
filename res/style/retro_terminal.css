@@ -29,6 +29,7 @@ body {
 }
 
 .section a {
+	font-family: monospace;
 	color: green;
 	line-height: 1.4;
 	margin-bottom: 18px;
@@ -41,18 +42,21 @@ body {
 }
 
 .section caption {
+	font-family: monospace;
 	color: green;
 	border: 3px solid green;
 	padding: 6px;
 }
 
 .section th {
+	font-family: monospace;
 	color: green;
 	border: 3px solid green;
 	padding: 6px;
 }
 
 .section td {
+	font-family: monospace;
 	color: green;
 	border: 3px solid green;
 	padding: 6px;
@@ -66,6 +70,7 @@ body {
 }
 
 .section button {
+	font-family: monospace;
 	background-color: black;
 	color: green;
 	border: 3px solid green;
