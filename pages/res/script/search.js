@@ -1,7 +1,8 @@
 const path = {
 	"0": "pages/c.html",
 	"1": "pages/tools.html",
-	"2": "pages/music.html"
+	"2": "pages/music.html",
+	"3": "pages/goals.html"
 };
 
 let input = document.getElementById("search");
@@ -17,6 +18,9 @@ input.addEventListener("input", () => {
 	}
 	if (buffer == "Music") {
 		window.location.href = path["2"];
+	}
+	if (buffer === "Goals") {
+		window.location.href = path["3"];
 	}
 });
 
