@@ -1,0 +1,22 @@
+body {
+	background-color: black;
+	border: 6px solid green;
+	padding: 6px;
+}
+
+.section {
+	border: 6px solid green;
+	padding: 6px;
+	h1 {
+		font-family: monospace;
+		color: green;
+		line-height: 12px;
+	}
+	p {
+		font-family: monospace;
+		color: green;
+		line-height: 12px;
+	}
+}
+
+
