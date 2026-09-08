@@ -2,7 +2,8 @@ const path = {
 	"C": "pages/c.html",
 	"Tools": "pages/tools.html",
 	"Music": "pages/music.html",
-	"Goals": "pages/goals.html"
+	"Goals": "pages/goals.html",
+	"Query": "pages/valid_query.html"
 };
 
 const error = {
