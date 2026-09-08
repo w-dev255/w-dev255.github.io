@@ -4,58 +4,58 @@ body {
 	padding: 6px;
 }
 
-.section {
+.retro {
 	border: 6px solid green;
 	padding: 6px;
 	margin-bottom: 24px;
 }
 
-.section h1 {
+.retro h1 {
 	font-family: monospace;
 	color: green;
 	line-height: 1.4;
 }
 
-.section p {
+.retro p {
 	font-family: monospace;
 	color: green;
 	line-height: 1.4;
 }
 
-.section div {
+.retro div {
 	border: 6px solid green;
 	padding: 3px;
 	margin-bottom: 18px;
 }
 
-.section a {
+.retro a {
 	font-family: monospace;
 	color: green;
 	line-height: 1.4;
 	margin-bottom: 18px;
 }
 
-.section table {
+.retro table {
 	border: 3px solid green;
 	padding: 6px;
 	margin-bottom: 18px;
 }
 
-.section caption {
+.retro caption {
 	font-family: monospace;
 	color: green;
 	border: 3px solid green;
 	padding: 6px;
 }
 
-.section th {
+.retro th {
 	font-family: monospace;
 	color: green;
 	border: 3px solid green;
 	padding: 6px;
 }
 
-.section td {
+.retro td {
 	font-family: monospace;
 	color: green;
 	border: 3px solid green;
@@ -70,28 +70,18 @@ body {
 	padding: 6px;
 }
 
+.retro button {
+        font-family: monospace;
+        background-color: black;
+        color: green;
+        border: 3px solid green;
+        padding: 6px;
+}
+
 .search_bar::placeholder {
 	font-family: monospace;
 	color: green;
 	opacity: 1;
-}
-
-.section button {
-	font-family: monospace;
-	background-color: black;
-	color: green;
-	border: 3px solid green;
-	padding: 6px;
-}
-
-.C div {
-	border: 0px solid black;
-}
-
-.C p {
-	font-family: monospace;
-	color: green;
-	line-height: 1.4;
 }
 
 .icon {
