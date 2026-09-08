@@ -3,6 +3,7 @@ const path = {
 	"Tools": "pages/tools.html",
 	"Music": "pages/music.html",
 	"Goals": "pages/goals.html",
+	"Elettrotecnica": "pages/elettrotecnica.html",
 	"Query": "pages/valid_query.html"
 };
 
