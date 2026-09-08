@@ -162,9 +162,11 @@
 			</div>
 			<div class="C">
 				<p>#include &lt;stdio.h&gt;</p>
+				<p>#include &lt;math.h&gt;</p>
 				<p>int main(int argc, char* argv[]) {</p>
 				<p>&nbsp;float num = 10.4f;</p>
-				<p>&nbsp;if (num == 10.4f) {</p>
+				<p>&nbsp;float eps = 0.0001;</p>
+				<p>&nbsp;if (fabsf(num - 10.4f) < eps) {</p>
 				<p>&nbsp;&nbsp;printf("%f\n", num);</p>
 				<p>&nbsp;} else {</p>
 				<p>&nbsp;&nbsp;printf("Insufficient resources\n");</p>
