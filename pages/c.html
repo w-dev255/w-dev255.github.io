@@ -106,8 +106,8 @@
 				<p>#include &lt;stdio.h&gt;</p>
 				<p>int main(int argc, char* argv[]) {</p>
 				<p>&nbsp;int num = 1;</p>
-				<p>&nbsp;int* num = &num;</p>
-				<p>&nbsp;printf("%d\n", num[0]);</p>
+				<p>&nbsp;int* p = &num;</p>
+				<p>&nbsp;printf("%d\n", *p);</p>
 				<p>&nbsp;return 0;</p>
 				<p>}</p>
 			</div>
