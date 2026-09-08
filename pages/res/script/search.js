@@ -3,7 +3,7 @@ const path = {
 	"Tools": "pages/tools.html",
 	"Music": "pages/music.html",
 	"Goals": "pages/goals.html",
-	"Query": "pages/list.html"
+	"Query": "pages/valid_query.html"
 };
 
 const error = {
