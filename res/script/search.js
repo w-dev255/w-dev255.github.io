@@ -1,26 +1,34 @@
 const path = {
-	"0": "pages/c.html",
-	"1": "pages/tools.html",
-	"2": "pages/music.html",
-	"3": "pages/goals.html"
+	"C": "pages/c.html",
+	"Tools": "pages/tools.html",
+	"Music": "pages/music.html",
+	"Goals": "pages/goals.html"
 };
+
+const error = {
+	"404": "pages/404.html"
+}
 
 let input = document.getElementById("search");
 
-input.addEventListener("input", () => {
-	let buffer = input.value
+let btn = document.createElement("button");
+btn.type = "submit";
+btn.textContent = "🔎";
+btn.style.backgroundColor = "black";
+btn.style.color = "green";
+btn.style.fontFamily = "monospace";
+btn.style.border = "3px solid green";
+btn.style.padding = "6px";
 
-	if (buffer === "C") {
-		window.location.href = path["0"];
-	}
-	if (buffer === "Tools") {
-		window.location.href = path["1"];
-	}
-	if (buffer === "Music") {
-		window.location.href = path["2"];
-	}
-	if (buffer === "Goals") {
-		window.location.href = path["3"];
+input.insertAdjacentElement("afterend", btn);
+
+btn.addEventListener("click", () => {
+	let buffer = input.value;
+
+	if (path[buffer]) {
+		window.location.href = path[buffer];
+	} else {
+		window.location.href = error["404"];
 	}
 });
 
