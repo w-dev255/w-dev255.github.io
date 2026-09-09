@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = 'black';
+
 const subject = {
 	"0": "elettrotecnica"
 };
