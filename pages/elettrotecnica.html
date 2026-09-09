@@ -101,6 +101,40 @@
 				<div class="retro">
 					<h1>Resistenza elettrica</p>
 					<p>La resistenza elettrica è la grandezza che misura quanto un materiale ostacola il passaggio della corrente elettrica.</p>
+					<div class="retro">
+						<p>#include &lt;stdio.h&gt;</p>
+						<p>#include &lt;stdlib.h&gt;</p>
+						<p>typedef struct {</p>
+						<p>&nbsp;double V;</p>
+						<p>&nbsp;double I;</p>
+						<p>&nbsp;double X;</p>
+						<p>} Electri_resistance;</p>
+						<p>int main(int argc, char* argv[]) {</p>
+						<p>&nbsp;if (argc == 3) {</p>
+						<p>&nbsp;&nbsp;printf("The arguments are enough.\n");</p>
+						<p>&nbsp;} else if (argc < 3) {</p>
+						<p>&nbsp;&nbsp;printf("The arguments are insufficient.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;} else if (argc > 3) {</p>
+						<p>&nbsp;&nbsp;printf("Too many arguments.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;Electric_resistance R = {0};</p>
+						<p>&nbsp;char* p = NULL;</p>
+						<p>&nbsp;R.V = strtod(argv[1], &p);</p>
+						<p>&nbsp;if (*p != '\0') {</p>
+						<p>&nbsp;&nbsp;printf("Invalid V.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;R.I = strtod(argv[2], &p);</p>
+						<p>&nbsp;if (*p != '\0') {</p>
+						<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;R.X = R.V / R.I;</p>
+						<p>&nbsp;printf("%f Ω\n", R.X);</p>
+						<p>&nbsp;return 0;</p>
+						<p>}</p> 
+					</div>
 				</div>
 			</div>
 		</div>
