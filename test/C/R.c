@@ -44,6 +44,10 @@ int main(int argc, char* argv[]) {
 
   return 1;
 
+ } else {
+
+  printf("Valid V.\n");
+
  }
 
  R.I = strtod(argv[2], &p);
@@ -52,7 +56,11 @@ int main(int argc, char* argv[]) {
 
   printf("Invalid I.\n");
 
- return 1;
+  return 1;
+
+ } else {
+
+  printf("Valid I.\n");
 
  }
 
