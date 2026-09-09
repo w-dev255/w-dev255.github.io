@@ -17,35 +17,34 @@
 				<p>#include &lt;stdio.h&gt;</p>
 				<p>#include &lt;stdlib.h&gt;</p>
 				<p>typedef struct {</p>
-				<p>&nbsp;double V;</p>
+				<p>&nbsp;double X;</p>
 				<p>&nbsp;double I;</p>
 				<p>&nbsp;double R;</p>
-				<p>} V;</p>
+				<p>} Tension;</p>
 				<p>int main(int argc, char* argv[]) {</p>
 				<p>&nbsp;if (argc == 3) {</p>
-				<p>&nbsp;&nbsp;printf("The arguments are enough.\n"</p>
+				<p>&nbsp;&nbsp;printf("The arguments are enough.\n");</p>
 				<p>&nbsp;} else {</p>
 				<p>&nbsp;&nbsp;printf("Insufficient arguments.\n");</p>
 				<p>&nbsp;}</p>
 				<p>&nbsp;char* p = NULL;</p>
-				<p>&nbsp;V Tension = {0};</p>
-				<p>&nbsp;Tension.I = strtol(argv[1], &p, 10);</p>
+				<p>&nbsp;Tension V = {0};</p>
+				<p>&nbsp;V.I = strtol(argv[1], &p);</p>
 				<p>&nbsp;if (p == argv[1]) {</p>
-				<p>&nbsp;&nbsp;printf("Invalid I\n") {</p>
+				<p>&nbsp;&nbsp;printf("Invalid I\n");</p>
 				<p>&nbsp;&nbsp;return 1;</p>
 				<p>&nbsp;} else {</p>
 				<p>&nbsp;&nbsp;printf("Valid I\n");</p>
 				<p>&nbsp;}</p>
-				<p>&nbsp;Tension.R = strtol(argv[2], &p, 10);</p>
+				<p>&nbsp;V.R = strtol(argv[2], &p);</p>
 				<p>&nbsp;if (p == argv[2]) {</p>
 				<p>&nbsp;&nbsp;printf("Invalid R\n");</p>
 				<p>&nbsp;&nbsp;return 1;</p>
 				<p>&nbsp;} else {</p>
 				<p>&nbsp;&nbsp;printf("Valid R\n");</p>
 				<p>&nbsp;}</p>
-				<p>&nbsp;Tension.V = Tension.I * Tension.R;</p>
-				<p>&nbsp;double V = I * R;</p>
-				<p>&nbsp;printf("%f\n", V);</p>
+				<p>&nbsp;V.X = Tension.I * Tension.R;</p>
+				<p>&nbsp;printf("%f\n", V.X);</p>
 				<p>&nbsp;return 0;</p>
 				<p>}</p>
 			<div class="retro">
