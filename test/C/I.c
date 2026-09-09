@@ -54,13 +54,13 @@ int main(int argc, char* argv[]) {
 
  if (*p != '\0') {
 
-  printf("Invalid I.\n");
+  printf("Invalid V.\n");
 
   return 1;
 
  } else {
 
-  printf("Valid I.\n");
+  printf("Valid V.\n");
 
  }
 
