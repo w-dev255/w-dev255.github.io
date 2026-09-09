@@ -4,6 +4,7 @@ const path = {
 	"Music": "pages/music.html",
 	"Goals": "pages/goals.html",
 	"Elettrotecnica": "pages/elettrotecnica.html",
+	"Quiz": "pages/quiz_elettrotecnica.html",
 	"Query": "pages/valid_query.html"
 };
 
