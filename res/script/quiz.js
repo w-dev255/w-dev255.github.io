@@ -33,8 +33,10 @@ choose.onclick = () => {
 	msg.style.fontFamily = 'monospace';
 	msg.textContent = questions["0"];
 
-	let innerbox = document.createElement('div');
-	document.body.appendChild(innerbox);
+	let innerbox = document.box.createElement('div');
+	innerbox.id = 'retro_box';
+	innerbox.style.border = '2px solid green';
+	document.body.box.appendChild(innerbox);
 	msg.appendChild(innerbox);
 
 	let textbox = document.createElement('textarea');
