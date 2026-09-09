@@ -33,11 +33,11 @@ choose.onclick = () => {
 	msg.style.fontFamily = 'monospace';
 	msg.textContent = questions["0"];
 
-	let innerbox = document.box.createElement('div');
+	let innerbox = document.createElement('div');
 	innerbox.id = 'retro_box';
 	innerbox.style.border = '2px solid green';
-	document.body.box.appendChild(innerbox);
-	msg.appendChild(innerbox);
+	box.appendChild(innerbox);
+	innerbox.appendChild(box);
 
 	let textbox = document.createElement('textarea');
 	textbox.style.border = '3px solid green';
@@ -46,7 +46,7 @@ choose.onclick = () => {
 	textbox.style.fontFamily = 'monospace';
 	textbox.id = 'area';
 
-	submit_button = document.createElement('button');
+	let submit_button = document.createElement('button');
 	submit_button.style.border = '3px solid green';
 	submit_button.style.backgroundColor = 'black';
 	submit_button.style.color = 'green';
