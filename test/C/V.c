@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
 
  V.I = strtod(argv[1], &p);
 
- if (p == argv[1]) {
+ if (*p != '\0') {
 
   printf("Invalid I\n");
 
@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
 
  V.R = strtod(argv[2], &p);
 
- if (p == argv[2]) {
+ if (*p != '\0') {
 
   printf("Invalid R\n");
 

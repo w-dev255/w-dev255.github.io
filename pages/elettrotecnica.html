@@ -34,14 +34,14 @@
 				<p>&nbsp;Tension V = {0};</p>
 				<p>&nbsp;char* p = NULL;</p>
 				<p>&nbsp;V.I = strtod(argv[1], &p);</p>
-				<p>&nbsp;if (*p == '\0') {</p>
+				<p>&nbsp;if (*p != '\0') {</p>
 				<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
 				<p>&nbsp;&nbsp;return 1;</p>
 				<p>&nbsp;} else {</p>
 				<p>&nbsp;&nbsp;printf("Valid I.\n");</p>
 				<p>&nbsp;}</p>
 				<p>&nbsp;V.R = strtod(argv[2], &p);</p>
-				<p>&nbsp;if (*p == '\0') {</p>
+				<p>&nbsp;if (*p != '\0') {</p>
 				<p>&nbsp;&nbsp;printf("Invalid R.\n");</p>
 				<p>&nbsp;&nbsp;return 1;</p>
 				<p>&nbsp;} else {</p>
@@ -75,14 +75,14 @@
 					<p>&nbsp;electric_current I = {0};</p>
 					<p>&nbsp;char* p = NULL;</p>
 					<p>&nbsp;I.V = strtod(argv[1], &p);</p>
-					<p>&nbsp;if (*p == '\0') {</p>
+					<p>&nbsp;if (*p != '\0') {</p>
 					<p>&nbsp;&nbsp;printf("Invalid R.\n");</p>
 					<p>&nbsp;&nbsp;return 1;</p>
 					<p>&nbsp;} else {</p>
 					<p>&nbsp;&nbsp;printf("Valid R.\n");</p>
 					<p>&nbsp;}</p>
 					<p>&nbsp;I.R = strtod(argv[2], &p);</p>
-					<p>&nbsp;if (*p == '\0') {</p>
+					<p>&nbsp;if (*p != '\0') {</p>
 					<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
 					<p>&nbsp;&nbsp;return 1;</p>
 					<p>&nbsp;} else {</p>
