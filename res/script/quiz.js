@@ -28,6 +28,17 @@ choose.onclick = () => {
 	textbox.style.backgroundColor = 'black';
 	textbox.style.color = 'green';
 	textbox.style.fontFamily = 'monospace';
+	textbox.id = 'area';
+
+	submit_button = document.createElement('button');
+	submit_button.style.border = '3px solid green';
+	submit_button.style.backgroundColor = 'black';
+	submit_button.style.color = 'green';
+	submit_button.style.fontFamily = 'monospace';
+	submit_button.textContent = 'submit';
+
 	document.body.appendChild(textbox);
+
+	textbox.after(submit_button);
 }
 
