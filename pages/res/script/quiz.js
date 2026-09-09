@@ -37,7 +37,7 @@ choose.onclick = () => {
 	innerbox.id = 'retro_box';
 	innerbox.style.border = '2px solid green';
 	box.appendChild(innerbox);
-	innerbox.appendChild(box);
+	innerbox.appendChild(msg);
 
 	let textbox = document.createElement('textarea');
 	textbox.style.border = '3px solid green';
