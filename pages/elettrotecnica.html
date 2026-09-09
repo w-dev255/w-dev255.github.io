@@ -15,45 +15,46 @@
 				<div class="retro">
 					<h1>Tensione elettrica</h1>
 					<p>La tensione elettrica è la differenza di potenziale elettrico tra due punti ed esprime quanta energia serve per spostare una carica elettrica da un punto all’altro.</p>
+					<div class="retro">
+						<p>#include &lt;stdio.h&gt;</p>
+						<p>#include &lt;stdlib.h&gt;</p>
+						<p>typedef struct {</p>
+						<p>&nbsp;double X;</p>
+						<p>&nbsp;double I;</p>
+						<p>&nbsp;double R;</p>
+						<p>} Tension;</p>
+						<p>int main(int argc, char* argv[]) {</p>
+						<p>&nbsp;if (argc == 3) {</p>
+						<p>&nbsp;&nbsp;printf("The arguments are enough.\n");</p>
+						<p>&nbsp;} else if (argc < 3) {</p>
+						<p>&nbsp;&nbsp;printf("Insufficient arguments.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;} else if (argc > 3) {</p>
+						<p>&nbsp;&nbsp;printf("Too many arguments.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;Tension V = {0};</p>
+						<p>&nbsp;char* p = NULL;</p>
+						<p>&nbsp;V.I = strtod(argv[1], &p);</p>
+						<p>&nbsp;if (*p != '\0') {</p>
+						<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;} else {</p>
+						<p>&nbsp;&nbsp;printf("Valid I.\n");</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;V.R = strtod(argv[2], &p);</p>
+						<p>&nbsp;if (*p != '\0') {</p>
+						<p>&nbsp;&nbsp;printf("Invalid R.\n");</p>
+						<p>&nbsp;&nbsp;return 1;</p>
+						<p>&nbsp;} else {</p>
+						<p>&nbsp;&nbsp;printf("Valid R.\n");</p>
+						<p>&nbsp;}</p>
+						<p>&nbsp;V.X = V.I * V.R;</p>
+						<p>&nbsp;printf("%f V\n", V.X);</p>
+						<p>&nbsp;return 0;</p>
+						<p>}</p>
+					</div>
 				</div>
-				<div class="retro">
-					<p>#include &lt;stdio.h&gt;</p>
-					<p>#include &lt;stdlib.h&gt;</p>
-					<p>typedef struct {</p>
-					<p>&nbsp;double X;</p>
-					<p>&nbsp;double I;</p>
-					<p>&nbsp;double R;</p>
-					<p>} Tension;</p>
-					<p>int main(int argc, char* argv[]) {</p>
-					<p>&nbsp;if (argc == 3) {</p>
-					<p>&nbsp;&nbsp;printf("The arguments are enough.\n");</p>
-					<p>&nbsp;} else if (argc < 3) {</p>
-					<p>&nbsp;&nbsp;printf("Insufficient arguments.\n");</p>
-					<p>&nbsp;&nbsp;return 1;</p>
-					<p>&nbsp;} else if (argc > 3) {</p>
-					<p>&nbsp;&nbsp;printf("Too many arguments.\n");</p>
-					<p>&nbsp;&nbsp;return 1;</p>
-					<p>&nbsp;}</p>
-					<p>&nbsp;Tension V = {0};</p>
-					<p>&nbsp;char* p = NULL;</p>
-					<p>&nbsp;V.I = strtod(argv[1], &p);</p>
-					<p>&nbsp;if (*p != '\0') {</p>
-					<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
-					<p>&nbsp;&nbsp;return 1;</p>
-					<p>&nbsp;} else {</p>
-					<p>&nbsp;&nbsp;printf("Valid I.\n");</p>
-					<p>&nbsp;}</p>
-					<p>&nbsp;V.R = strtod(argv[2], &p);</p>
-					<p>&nbsp;if (*p != '\0') {</p>
-					<p>&nbsp;&nbsp;printf("Invalid R.\n");</p>
-					<p>&nbsp;&nbsp;return 1;</p>
-					<p>&nbsp;} else {</p>
-					<p>&nbsp;&nbsp;printf("Valid R.\n");</p>
-					<p>&nbsp;}</p>
-					<p>&nbsp;V.X = V.I * V.R;</p>
-					<p>&nbsp;printf("%f V\n", V.X);</p>
-					<p>&nbsp;return 0;</p>
-					<p>}</p>
 				<div class="retro">
 					<h1>Corrente</h1>
 					<p>La corrente elettrica è il flusso ordinato di cariche elettriche che attraversa un conduttore in un intervallo di tempo.</p>
