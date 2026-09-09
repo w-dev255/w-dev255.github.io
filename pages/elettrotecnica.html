@@ -108,7 +108,7 @@
 						<p>&nbsp;double V;</p>
 						<p>&nbsp;double I;</p>
 						<p>&nbsp;double X;</p>
-						<p>} Electri_resistance;</p>
+						<p>} Electric_resistance;</p>
 						<p>int main(int argc, char* argv[]) {</p>
 						<p>&nbsp;if (argc == 3) {</p>
 						<p>&nbsp;&nbsp;printf("The arguments are enough.\n");</p>
@@ -129,6 +129,7 @@
 						<p>&nbsp;R.I = strtod(argv[2], &p);</p>
 						<p>&nbsp;if (*p != '\0') {</p>
 						<p>&nbsp;&nbsp;printf("Invalid I.\n");</p>
+						<p>&nbsp;return 1;</p>
 						<p>&nbsp;}</p>
 						<p>&nbsp;R.X = R.V / R.I;</p>
 						<p>&nbsp;printf("%f Ω\n", R.X);</p>
