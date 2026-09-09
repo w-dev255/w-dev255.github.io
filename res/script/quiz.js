@@ -11,6 +11,7 @@ const responses = {
 };
 
 let choose = document.createElement('button');
+choose.style.border = '3px solid green';
 choose.textContent = 'start';
 choose.style.color = 'green';
 choose.style.backgroundColor = 'black';
@@ -18,6 +19,8 @@ choose.style.fontFamily = 'monospace';
 document.body.appendChild(choose);
 
 choose.onclick = () => {
+	choose.remove();
+
 	let msg = document.createElement('p');
 	msg.style.color = 'green';
 	msg.style.fontFamily = 'monospace';
