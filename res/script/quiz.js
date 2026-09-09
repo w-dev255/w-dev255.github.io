@@ -28,6 +28,6 @@ choose.onclick = () => {
 	textbox.style.backgroundColor = 'black';
 	textbox.style.color = 'green';
 	textbox.style.fontFamily = 'monospace';
-	document.appendChild(textbox);
+	document.body.appendChild(textbox);
 }
 
