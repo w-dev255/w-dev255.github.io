@@ -13,28 +13,41 @@
 				<h1>Elettrotecnica</h1>
 				<p>L’elettrotecnica è, in senso rigoroso, la disciplina tecnica che studia e applica i fenomeni elettrici, con particolare attenzione alle correnti forti, ai circuiti elettrici, alle reti di distribuzione e alle macchine elettriche.</p>
 			</div>
-			<div clas="retro">
-				<h1>Tensione</h1>
-				<p>La tensione elettrica indica la differenza di potenziale elettrico tra due punti di un circuito.</p>
-				<p>La legge di Ohm descrive la caduta di tensione ai capi di un resistore lineare.</p>
-				<p>Questa equazione vale solo per materiali ohmici, cioè quelli in cui la tensione è proporzionale alla corrente.</p>
-				<div class="retro">
-					<p>V = R · I</p>
-				</div>
-				<p>È la definizione generale di differenza di potenziale elettrico tra due punti.</p>
-				<div "retro">
-					<p>V = φ₂ − φ₁</p>
-				</div>
-				<p>V = W/q significa che la tensione elettrica è l'energia che ogni unità di carica deve possedere (o che viene trasferita) per spostarsi tra due punti.</p>
-				<div class="retro">
-					<p>V = W / Q</p>
-				</div>
-				<p>V = I · Z è la legge di Ohm generalizzata per la corrente alternata (AC). È la versione estesa di V = IR, valida quando nel circuito non c’è solo una resistenza, ma anche induttori e condensatori.</p>
-				<p>La tensione fasoriale  è uguale alla corrente fasoriale  moltiplicata per l’impedenza totale : V = I · Z</p>
-				<div class="retro">
-					<p>V = I · Z</p>
-				</div>
-			</div>
+			<div class="retro">
+				<p>#include &lt;stdio.h&gt;</p>
+				<p>#include &lt;stdlib.h&gt;</p>
+				<p>typedef struct {</p>
+				<p>&nbsp;double V;</p>
+				<p>&nbsp;double I;</p>
+				<p>&nbsp;double R;</p>
+				<p>} V;</p>
+				<p>int main(int argc, char* argv[]) {</p>
+				<p>&nbsp;if (argc == 3) {</p>
+				<p>&nbsp;&nbsp;printf("The arguments are enough.\n"</p>
+				<p>&nbsp;} else {</p>
+				<p>&nbsp;&nbsp;printf("Insufficient arguments.\n");</p>
+				<p>&nbsp;}</p>
+				<p>&nbsp;char* p = NULL;</p>
+				<p>&nbsp;V Tension = {0};</p>
+				<p>&nbsp;Tension.I = strtol(argv[1], &p, 10);</p>
+				<p>&nbsp;if (p == argv[1]) {</p>
+				<p>&nbsp;&nbsp;printf("Invalid I\n") {</p>
+				<p>&nbsp;&nbsp;return 1;</p>
+				<p>&nbsp;} else {</p>
+				<p>&nbsp;&nbsp;printf("Valid I\n");</p>
+				<p>&nbsp;}</p>
+				<p>&nbsp;Tension.R = strtol(argv[2], &p, 10);</p>
+				<p>&nbsp;if (p == argv[2]) {</p>
+				<p>&nbsp;&nbsp;printf("Invalid R\n");</p>
+				<p>&nbsp;&nbsp;return 1;</p>
+				<p>&nbsp;} else {</p>
+				<p>&nbsp;&nbsp;printf("Valid R\n");</p>
+				<p>&nbsp;}</p>
+				<p>&nbsp;Tension.V = Tension.I * Tension.R;</p>
+				<p>&nbsp;double V = I * R;</p>
+				<p>&nbsp;printf("%f\n", V);</p>
+				<p>&nbsp;return 0;</p>
+				<p>}</p>
 			<div class="retro">
 				<h1>Corrente</h1>
 				<p>La corrente elettrica è il flusso ordinato di cariche elettriche che attraversa un conduttore in un intervallo di tempo.</p>
