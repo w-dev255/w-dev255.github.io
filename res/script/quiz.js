@@ -32,7 +32,11 @@ choose.onclick = () => {
 	msg.style.color = 'green';
 	msg.style.fontFamily = 'monospace';
 	msg.textContent = questions["0"];
-	document.body.appendChild(msg);
+
+	let innerbox = document.createElement('div');
+	document.body.appendChild(innerbox);
+	msg.appendChild(innerbox);
+
 	let textbox = document.createElement('textarea');
 	textbox.style.border = '3px solid green';
 	textbox.style.backgroundColor = 'black';
