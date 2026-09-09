@@ -52,6 +52,8 @@ int main(int argc, char* argv[]) {
 
   printf("Invalid I.\n");
 
+ return 1;
+
  }
 
  R.X = R.V / R.I;
