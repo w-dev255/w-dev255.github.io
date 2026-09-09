@@ -1,5 +1,10 @@
 document.body.style.backgroundColor = 'black';
 
+let box = document.createElement('div');
+box.id = 'retro_box';
+box.style.border = '2px solid green';
+document.body.appendChild(box);
+
 const subject = {
 	"0": "elettrotecnica"
 };
@@ -42,8 +47,7 @@ choose.onclick = () => {
 	submit_button.style.fontFamily = 'monospace';
 	submit_button.textContent = 'submit';
 
-	document.body.appendChild(textbox);
-
-	textbox.after(submit_button);
+	box.appendChild(textbox);
+	box.appendChild(submit_button);
 }
 
