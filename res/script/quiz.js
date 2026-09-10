@@ -67,7 +67,7 @@ choose.onclick = () => {
 			if (!box.querySelector('.success')) {
 				let success_innerbox = document.createElement('div');
 				success_innerbox.style.border = '3px solid green';
-				success_innerbox.className = 'retro_box';
+				success_innerbox.className = 'success';
 				box.appendChild(success_innerbox);
 
 				let success_msg = document.createElement('p');
