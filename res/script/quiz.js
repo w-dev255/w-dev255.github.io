@@ -1,5 +1,6 @@
 document.body.style.backgroundColor = 'black';
 document.body.style.border = '6px solid green';
+document.body.style.padding = '3px';
 
 class retroBox extends HTMLElement {
 	constructor() {
