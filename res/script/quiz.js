@@ -34,7 +34,7 @@ choose.onclick = () => {
 	msg.textContent = questions["0"];
 
 	let innerbox = document.createElement('div');
-	innerbox.class = 'retro_box';
+	innerbox.className = 'retro_box';
 	innerbox.style.border = '2px solid green';
 	box.appendChild(innerbox);
 	innerbox.appendChild(msg);
@@ -56,12 +56,11 @@ choose.onclick = () => {
 	innerbox.appendChild(textbox);
 	innerbox.appendChild(submit_button);
 
-	submit_button.addEventListener('click' () => {
+	submit_button.addEventListener('click', () => {
 		if (textbox.value === responses["0"]) {
 			let success_innerbox = document.createElement('div');
 			success_innerbox.style.border = '3px solid green';
 			success_innerbox.className = 'retro_box';
-			document.body.appendChild(success_innerbox);
 			box.appendChild(success_innerbox);
 
 			let success_msg = document.createElement('p');
