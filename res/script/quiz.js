@@ -63,7 +63,7 @@ choose.onclick = () => {
 	innerbox.appendChild(submit_button);
 
 	submit_button.addEventListener('click', () => {
-		if (textbox.value === responses["0"]) {
+		if (textbox.value.trim().toLowerCase() === responses["0"].trim.toLowerCase()) {
 			let success_innerbox = document.createElement('div');
 			success_innerbox.style.border = '3px solid green';
 			success_innerbox.className = 'retro_box';
