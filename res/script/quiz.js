@@ -49,6 +49,7 @@ choose.onclick = () => {
 	textbox.style.fontFamily = 'monospace';
 	textbox.style.width = '50px';
 	textbox.style.height = '25px';
+	textbox.style.padding = '3px';
 
 	let submit_button = document.createElement('button');
 	submit_button.style.border = '3px solid green';
@@ -57,6 +58,7 @@ choose.onclick = () => {
 	submit_button.style.fontFamily = 'monospace';
 	submit_button.style.width = '75px';
 	submit_button.style.height = '37px';
+	submit_button.style.padding = '3px';
 	submit_button.textContent = 'submit';
 
 	innerbox.appendChild(textbox);
