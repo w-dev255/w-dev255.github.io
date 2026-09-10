@@ -44,7 +44,7 @@ choose.onclick = () => {
 	textbox.style.backgroundColor = 'black';
 	textbox.style.color = 'green';
 	textbox.style.fontFamily = 'monospace';
-	textbox.class = 'area';
+	textbox.className = 'area';
 
 	let submit_button = document.createElement('button');
 	submit_button.style.border = '3px solid green';
@@ -56,16 +56,16 @@ choose.onclick = () => {
 	box.appendChild(textbox);
 	box.appendChild(submit_button);
 
-	submit_button.addEventListener('hadler' => {
+	submit_button.addEventListener('hadler' () => {
 		if (textbox.value === responses["0"]) {
 			let success_innerbox = document.createElement('div');
 			success_innerbox.style.border = '3px solid green';
-			success_innerbox.class = 'retro_box';
+			success_innerbox.className = 'retro_box';
 			document.body.appendChild(success_innerbox);
 			box.appendChild(success_innerbox);
 
 			let success_msg = document.createElement('p');
-			success_msg.style.color = green;
+			success_msg.style.color = 'green';
 			success_msg.style.fontFamily = 'monospace';
 			success_msg.textContent = 'Questa è la risposta corretta.';
 
