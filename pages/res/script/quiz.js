@@ -1,8 +1,17 @@
 document.body.style.backgroundColor = 'black';
+document.body.style.border = '6px solid green';
 
-let box = document.createElement('div');
-box.className = 'retro_box';
-box.style.border = '2px solid green';
+class retroBox extends HTMLElement {
+	constructor() {
+		super();
+		this.style.border = '3px solid green';
+		this.style.padding = '3px';
+		this.className = 'retro_box';
+	}
+}
+customElements.define('retro-box', retroBox);
+
+let box = new retroBox();
 document.body.appendChild(box);
 
 const subject = {
