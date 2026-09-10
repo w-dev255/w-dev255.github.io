@@ -1,12 +1,12 @@
 document.body.style.backgroundColor = 'black';
 
-supported_language = ["JavaScript"];
+const supported_language = ["JavaScript"];
 
-const buffer = [];
+let buffer = [];
 
-const command = [];
-const language = [];
-const output = [];
+let command = [];
+let language = [];
+let output = [];
 
 let entry = document.createElement('p');
 entry.textContent = '~#';
