@@ -16,6 +16,7 @@ document.body.appendChild(entry);
 
 let commandArea = document.createElement('textarea');
 commandArea.style.border = "none";
+commandArea.style.backgroundColor = 'black';
 commandArea.style.color = 'green';
 commandArea.style.fontFamily = 'monospace';
 commandArea.style.width = '100px';
