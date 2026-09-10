@@ -2,7 +2,7 @@ document.body.style.backgroundColor = 'black';
 document.body.style.border = '6px solid green';
 document.body.style.padding = '3px';
 
-class retroBox extends HTMLElement {
+class retroBox extends HTMLDivElement {
 	constructor() {
 		super();
 		this.style.border = '3px solid green';
@@ -10,7 +10,42 @@ class retroBox extends HTMLElement {
 		this.className = 'retro_box';
 	}
 }
-customElements.define('retro-box', retroBox);
+customElements.define('retro-box', retroBox, { extends: 'div' });
+
+class retroMsg extends HTMLParagraphElement {
+	constructor() {
+		super();
+		this.style.color = 'green';
+		this.style.fontFamily = 'monospace';
+	}
+}
+customElements.define('retro-msg', retroMsg, { extends: 'p' });
+
+class retroButton extends HTMLButtonElement {
+	constructor() {
+		super();
+		this.style.border = '3px solid green';
+		this.style.padding = '6px';
+		this.style.backgroundColor = 'black';
+		this.style.fontFamily = 'monospace';
+		this.style.color = 'green';
+		this.style.width = '50px';
+		this.style.height = '25px';
+	}
+}
+customElements.define('retro-button', retroButton, { extends: 'button' });
+
+class retroTextbox extends HTMLTextAreaElement {
+	constructor() {
+		super();
+		this.style.border = '3px solid green';
+		this.style.backgroundColor = 'black';
+		this.style.padding = '6px';
+		this.style.color = 'green';
+		this.style.fontFamily = 'monospace';
+	}
+}
+customElements.define('retro-textbox', retroTextbox, { extends: 'textarea' });
 
 let box = new retroBox();
 document.body.appendChild(box);
@@ -27,28 +62,16 @@ const responses = {
 	"0": "V / I"
 };
 
-let choose = document.createElement('button');
-choose.style.border = '3px solid green';
-choose.textContent = 'start';
-choose.style.color = 'green';
-choose.style.backgroundColor = 'black';
-choose.style.fontFamily = 'monospace';
-choose.style.width = '50px';
-choose.style.height = '25px';
+let choose = new retroButton();
 document.body.appendChild(choose);
 
 choose.onclick = () => {
 	choose.remove();
 
-	let msg = document.createElement('p');
-	msg.style.color = 'green';
-	msg.style.fontFamily = 'monospace';
+	let msg = new retroMsg();
 	msg.textContent = questions["0"];
 
-	let innerbox = document.createElement('div');
-	innerbox.className = 'retro_box';
-	innerbox.style.border = '2px solid green';
-	innerbox.style.padding = '3px';
+	let innerbox = new retroBox();
 
 	box.appendChild(innerbox);
 
