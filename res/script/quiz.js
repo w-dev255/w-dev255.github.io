@@ -60,7 +60,7 @@ choose.onclick = () => {
 	submit_button.textContent = 'submit';
 
 	innerbox.appendChild(textbox);
-	innerbox.appendChild(submit_button);
+	textbox.after(submit_button);
 
 	submit_button.addEventListener('click', () => {
 		if (textbox.value.trim().toLowerCase() === responses["0"].trim().toLowerCase()) {
