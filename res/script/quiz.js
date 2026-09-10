@@ -34,7 +34,7 @@ choose.onclick = () => {
 	msg.textContent = questions["0"];
 
 	let innerbox = document.createElement('div');
-	innerbox.id = 'retro_box';
+	innerbox.class = 'retro_box';
 	innerbox.style.border = '2px solid green';
 	box.appendChild(innerbox);
 	innerbox.appendChild(msg);
@@ -44,7 +44,7 @@ choose.onclick = () => {
 	textbox.style.backgroundColor = 'black';
 	textbox.style.color = 'green';
 	textbox.style.fontFamily = 'monospace';
-	textbox.id = 'area';
+	textbox.class = 'area';
 
 	let submit_button = document.createElement('button');
 	submit_button.style.border = '3px solid green';
