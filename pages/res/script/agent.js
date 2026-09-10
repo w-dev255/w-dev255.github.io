@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = 'black';
+
 const command = [];
 const additional = [];
 const instruction = [];
