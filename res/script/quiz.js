@@ -47,8 +47,8 @@ choose.onclick = () => {
 	textbox.style.backgroundColor = 'black';
 	textbox.style.color = 'green';
 	textbox.style.fontFamily = 'monospace';
-	textbox.style.width = '300px';
-	textbox.style.height = '120px';
+	textbox.style.width = '50px';
+	textbox.style.height = '25px';
 
 	let submit_button = document.createElement('button');
 	submit_button.style.border = '3px solid green';
