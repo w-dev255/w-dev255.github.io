@@ -1,8 +1,7 @@
 document.body.style.backgroundColor = 'black';
 
 const command = [];
-const additional = [];
-const instruction = [];
+const output = [];
 
 let entry = document.createElement('p');
 entry.textContent = '~#';
@@ -13,11 +12,12 @@ let commandArea = document.createElement('textarea');
 commandArea.style.border = "none";
 commandArea.style.color = 'green';
 commandArea.style.fontFamily = 'monospace';
-commandArea.style.width = '50px';
-commandArea.style.height = '25px';
+commandArea.style.width = '100px';
+commandArea.style.height = '50px';
 
 commandArea.addEventListener('keydown', (event) => {
 	if (event.key === "Enter") {
-		command.push(commandArea.value);
+		event.preventDefault();
+		command.push(commandArea.value.trim());
 	}
 });

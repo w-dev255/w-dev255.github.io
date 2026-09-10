@@ -1,32 +1,10 @@
-#To import a JavaScript program.
-<script src=path defer</script>
+#JavaScript Agent
+A JavaScript agent must have at least four components:
 
-#To declare a variable on JavaScript.
-var name = value;
-let name = value;
-const name = value;
+Parser: interprets the typed string.
 
-var
-        - varfunction‑scopehoisting with initialization to undefined
-        - reassignable
-        - to be avoided
+Dispatcher: decides which function to execute.
 
-let
-        - letblock‑scope
-        - reassignable
-        - modern
-        - sure
+Internal state: variables, memory, context.
 
-const
-        - constblock‑scopenon
-        - reassignable
-        - constant binding, not constant value
-
-#if/else if/else
-	if (condition) {
-		logic
-	} else if (condition) {
-		logic
-	} else {
-		logic
-	}
+Output generator: produces text, boxes, responses.
