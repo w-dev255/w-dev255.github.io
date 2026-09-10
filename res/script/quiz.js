@@ -1,7 +1,7 @@
 document.body.style.backgroundColor = 'black';
 
 let box = document.createElement('div');
-box.id = 'retro_box';
+box.className = 'retro_box';
 box.style.border = '2px solid green';
 document.body.appendChild(box);
 
@@ -53,10 +53,10 @@ choose.onclick = () => {
 	submit_button.style.fontFamily = 'monospace';
 	submit_button.textContent = 'submit';
 
-	box.appendChild(textbox);
-	box.appendChild(submit_button);
+	innerbox.appendChild(textbox);
+	innerbox.appendChild(submit_button);
 
-	submit_button.addEventListener('hadler' () => {
+	submit_button.addEventListener('click' () => {
 		if (textbox.value === responses["0"]) {
 			let success_innerbox = document.createElement('div');
 			success_innerbox.style.border = '3px solid green';
@@ -69,10 +69,8 @@ choose.onclick = () => {
 			success_msg.style.fontFamily = 'monospace';
 			success_msg.textContent = 'Questa è la risposta corretta.';
 
-			document.body.appendChild(success_msg);
-
 			success_innerbox.appendChild(success_msg);
 		}
-	}
-}
+	});
+};
 
