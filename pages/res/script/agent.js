@@ -23,10 +23,11 @@ commandArea.style.height = '50px';
 commandArea.addEventListener('keydown', (event) => {
 	if (event.key === "Enter") {
 		event.preventDefault();
-		if (commandArea.value.trim().lenght() === 0) {
+		if (commandArea.value.trim().length() === 0) {
 			return;
 		} else {
 			buffer.push(commandArea.value.trim());
+			commandArea.value = '';
 		}
 	}
 });
