@@ -64,17 +64,19 @@ choose.onclick = () => {
 
 	submit_button.addEventListener('click', () => {
 		if (textbox.value.trim().toLowerCase() === responses["0"].trim.toLowerCase()) {
-			let success_innerbox = document.createElement('div');
-			success_innerbox.style.border = '3px solid green';
-			success_innerbox.className = 'retro_box';
-			box.appendChild(success_innerbox);
+			if (!box.querySelector('.success)) {
+				let success_innerbox = document.createElement('div');
+				success_innerbox.style.border = '3px solid green';
+				success_innerbox.className = 'retro_box';
+				box.appendChild(success_innerbox);
 
-			let success_msg = document.createElement('p');
-			success_msg.style.color = 'green';
-			success_msg.style.fontFamily = 'monospace';
-			success_msg.textContent = 'Questa è la risposta corretta.';
+				let success_msg = document.createElement('p');
+				success_msg.style.color = 'green';
+				success_msg.style.fontFamily = 'monospace';
+				success_msg.textContent = 'Questa è la risposta corretta.';
 
-			success_innerbox.appendChild(success_msg);
+				success_innerbox.appendChild(success_msg);
+			}
 		}
 	});
 };
