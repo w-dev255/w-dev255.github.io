@@ -55,8 +55,8 @@ choose.onclick = () => {
 	submit_button.style.backgroundColor = 'black';
 	submit_button.style.color = 'green';
 	submit_button.style.fontFamily = 'monospace';
-	submit_button.style.width = '50px';
-	submit_button.style.height = '25px';
+	submit_button.style.width = '75px';
+	submit_button.style.height = '37.5px';
 	submit_button.textContent = 'submit';
 
 	innerbox.appendChild(textbox);
